@@ -1,0 +1,48 @@
+/* Style inputs, select elements and textareas */
+input[type=text], textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+.container {
+    background-color: rgb(174, 164, 184);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Style the submit button */
+button[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+  }
+
+/* Responsive layout - when the screen is more than 600px wide, make the columns  next to the label */
+@media all and (min-width: 600px) {
+  .container{
+    flex-direction:row;
+  }
+
+  .row{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 0px;
+    margin: 12px 20px;
+  }
+
+  button{
+    display:flex;
+    justify-content:center;
+  }
+
+  }
